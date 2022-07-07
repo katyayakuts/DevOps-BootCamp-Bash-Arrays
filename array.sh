@@ -12,7 +12,7 @@ for i in {a..z}; do
  fi
 done
 
-if [[ $num -ge 1 ]]
+if [[ $num -gt 1 ]]
 then
         echo "$num folders created: $(ls -d folder_* | grep -v / | xargs echo | sed 's/ /, /g')";
 else
